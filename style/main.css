@@ -1,0 +1,548 @@
+:root{
+    --vermelho: #e62429;
+    --preto: #202020;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+
+.body{
+    background: var(--vermelho);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+header .container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--vermelho);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header .logo{
+    margin-left: 15px;
+    color: white;
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--preto);
+}
+
+/*Último lançamento*/
+.filme-lancamento{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg' );
+
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ultimo-lancamento{
+    color: white;
+    padding: 15px 15px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+}
+
+.filme-logo{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.descricao{
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 400px;
+}
+
+.button{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+    text-decoration: none;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button i{
+    margin-right: 8px;
+}
+
+/*Carrossel com todos os filmes/séries*/
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.texto-1{
+    color: white; 
+    background-color: var(--vermelho);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.texto-2{
+    color: white; 
+    background-color: var(--preto);
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.ordem-cronologica{
+    background-color: var(--vermelho);
+    color: white;
+}
+
+.margin{
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+
+/*banners dos filmes e séries*/
+
+#capitao-america-1{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/wpI4He62QfRK4F7njzqi0162pKC.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#capita-marvel{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/w2PMyoyLU22YvrGK3smVM9fW1jj.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#hulk{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/xfBnQ4mgf1jYZsscJGJjr6ce0Ar.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-ferro{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/yjSVhK0HuCcbK7jfoH2HLKyeANc.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-ferro-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/7lmBufEG7P7Y1HClYK3gCxYrkgS.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#thor{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/cDJ61O1STtbWNBwefuqVrRe3d7l.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#vingadores{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-ferro-3{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/tKa1gmGKAUVYnflYcadipeL3d9h.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#thor-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/uhYoytlNaq46dG81wLmHqaSuzWu.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#capitao-america-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/55zqM1Dt1kVFOQf0ddgjhS3SCf7.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#gg-vol1{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/2UFxrUHVuSK3Tth7DvQQlF4mGTd.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#gg-vol2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/56H9Li9DhUj7SmUpAEZe3EdDIdK.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#vingadores-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/wjklF1KOHUcKezUjjyAnG5Hi6bK.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-formiga{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/1K3JmSNUN8OpjYsCjc0Hy0SYxAb.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#capitao-america-3{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/uXzQDq63nkrRbj2sl0OFJWmOPZg.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#pantera-negra{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/6ELJEzQJ3Y45HczvreC3dg0GV5R.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-aranha-1{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/24GSBmRoQlX7tnHvH5BTPq2eMVQ.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#viuva-negra{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#dr-estranho{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/eQN31P4IEhyp6NkdccvppJnyuJ4.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#thor-3{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/6G2fLCVm9fiLyHvBrccq6GSe2ih.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#vingadores-3{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/lmZFxXgJE3vgrciwuDib0N8CfQo.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-formiga-vespa{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/2tcTm5oRlRN5fKFvY4Gbrwp8h38.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#vingadores-4{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#loki{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/f5tjVQtxihaVwXOdpITSPeIqlpX.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#wanda-vision{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/1i1N0AVRb54H6ZFPDTwbo9MLxSF.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#shang-chi{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/r7K6Xt0RX4Mw0cAbZVw5cyb1Tux.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#falcao-si{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/eO8h4fwdjWodPr3awVr5wqMN3Ut.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#eternos{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/c6H7Z4u73ir3cIoCteuhJh7UCAR.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-aranha-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/vamhMTvh9m9zFHDoR0v1nRtf6T4.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#homem-aranha-3{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#dr-estranho-2{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/gUNRlH66yNDH3NQblYMIwgZXJ2u.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#cavaleiro-lua{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/vfWdZYGR5505zrCdgTHteFyARu3.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#gaviao-arqueiro{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/iXCuYBDEMX22Wpwx3whhOidLfJI.jpg');
+
+    height: 450px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/*Footer*/
+
+.bg-footer{
+    padding-top: 20px;
+    background-color: var(--vermelho);
+    color: white;
+}
+
+.link-footer{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.link-footer:hover{
+    color: var(--preto);
+}
